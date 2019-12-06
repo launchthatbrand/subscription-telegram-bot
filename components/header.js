@@ -5,8 +5,8 @@ function Header() {
   return <>
     <Head>
       <title>My page title</title>
-      <link key="styles" rel="stylesheet" href="/style.css"/>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <link key="styles" rel="stylesheet" href="/style.css"/>
     </Head>
     <header>
       <Link href="/">
