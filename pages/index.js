@@ -1,16 +1,11 @@
 import Link from 'next/link'
+import Header from '../components/header.js'
 
 function Home() {
-  return <div>
+  return <>
+    <Header/>
     <h1>Welcome to Next.js!</h1>
-    <Link href="/">
-      <a>Home</a>
-    </Link>
-    &middot;
-    <Link href="/about">
-      <a>About</a>
-    </Link>
-  </div>
+  </>
 }
 
 export default Home

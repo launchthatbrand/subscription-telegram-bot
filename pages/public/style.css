@@ -1,0 +1,8 @@
+body {
+  font-family: sans-serif;
+}
+
+#__next {
+  max-width: 600px;
+  margin: 0 auto;
+}
