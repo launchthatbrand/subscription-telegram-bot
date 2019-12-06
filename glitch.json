@@ -1,0 +1,21 @@
+{
+  "start": "/opt/watcher/app-types/node/start.sh",
+  "install": "/opt/watcher/app-types/node/install.sh",
+  "watch": {
+    "install": {
+      "include": [
+        "^package\\.json$",
+        "^\\.env$"
+      ]
+    },
+    "restart": {
+      "exclude": ["^pages/"],
+      "include": [
+        "\\.js$",
+        "\\.coffee$",
+        "\\.json"
+      ]
+    },
+    "throttle": 1000
+  }
+}
