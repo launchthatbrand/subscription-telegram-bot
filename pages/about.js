@@ -6,6 +6,7 @@ function About() {
     <Link href="/">
       <a>Home</a>
     </Link>
+    &middot;
     <Link href="/about">
       <a>About</a>
     </Link>
