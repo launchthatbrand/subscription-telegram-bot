@@ -9,8 +9,7 @@
   "scripts": {
     "prod": "next start",
     "build": "next build",
-    "prestart": "next build",
-    "start": "next start"
+    "start": "next"
   },
   "dependencies": {
     "next": "^9.1.5",
