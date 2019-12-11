@@ -11,7 +11,9 @@ function Header() {
     <header>
       <Link href="/">
         <a>Home</a>
-      </Link> &middot; <Link href="/about">
+      </Link>
+      &thinsp;&blacklozenge;&thinsp;      
+      <Link href="/about">
         <a>About</a>
       </Link>
     </header>
