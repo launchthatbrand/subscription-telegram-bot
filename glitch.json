@@ -9,7 +9,10 @@
       ]
     },
     "restart": {
-      "exclude": ["^pages/"],
+      "exclude": [
+        "^pages/",
+        "^components/"
+      ],
       "include": [
         "\\.js$",
         "\\.coffee$",
