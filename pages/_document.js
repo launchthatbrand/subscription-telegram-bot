@@ -13,10 +13,11 @@ class MyDocument extends Document {
       <Html>
         <Head />
         <body>
-          lol
-          <Header />
-          <Main />
-          <Footer />
+          <main>
+            <Header />
+            <Main />
+            <Footer />
+          </main>
           <NextScript />
         </body>
       </Html>
