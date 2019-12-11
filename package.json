@@ -12,15 +12,15 @@
     "start": "next"
   },
   "dependencies": {
-    "next": "^8.1.0",
+    "next": "^9.1.5",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
   "engines": {
-    "node": "8.x"
+    "node": "10.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
+    "url": "https://glitch.com/edit/#!/band-chef"
   },
   "license": "MIT",
   "keywords": [
