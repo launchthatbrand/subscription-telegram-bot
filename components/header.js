@@ -9,13 +9,14 @@ function Header() {
       <link key="styles" rel="stylesheet" href="/style.css"/>
     </Head>
     <header>
-      <Link href="/">
-        <a>Home</a>
-      </Link>
-      &thinsp;&blacklozenge;&thinsp;      
-      <Link href="/about">
-        <a>About</a>
-      </Link>
+      <nav>
+        <Link href="/">
+          <a>Home</a>
+        </Link>   
+        <Link href="/about">
+          <a>About</a>
+        </Link>
+      </nav>
     </header>
   </>
 }
