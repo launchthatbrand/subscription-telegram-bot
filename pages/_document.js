@@ -12,7 +12,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <link key="styles" rel="stylesheet" href="/style.css"/>
         </Head>
         <body>
