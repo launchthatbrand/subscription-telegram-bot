@@ -3,11 +3,6 @@ import Head from 'next/head'
 
 function Header() {
   return <header>
-    <Head>
-      <title>My page title</title>
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <link key="styles" rel="stylesheet" href="/style.css"/>
-    </Head>
     <nav>
       <Link href="/">
         <a>Home</a>
@@ -17,7 +12,6 @@ function Header() {
       </Link>
     </nav>
   </header>
-  
 }
 
 export default Header

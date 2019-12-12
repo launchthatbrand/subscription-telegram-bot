@@ -11,13 +11,16 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <link key="styles" rel="stylesheet" href="/style.css"/>
+        </Head>
         <body>
-          <main>
+          <div className="outer">
             <Header />
             <Main />
             <Footer />
-          </main>
+          </div>
           <NextScript />
         </body>
       </Html>
