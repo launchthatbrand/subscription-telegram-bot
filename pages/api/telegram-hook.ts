@@ -16,9 +16,8 @@ const BASE_PATH =
     : "https://held-cold-suggestion.glitch.me";
 const bot = new Telegraf(BOT_TOKEN);
 
-const menuMiddleware = new MenuMiddleware('/', menuTemplate)
-
 const menuTemplate = new MenuTemplate<MyContext>(ctx => `Hey ${ctx.from.first_name}!`)
+const menuMiddleware = new MenuMiddleware('/', menuTemplate)
 
 menuTemplate.interact('I am excited!', 'a', {
 	do: async ctx => {
