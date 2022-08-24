@@ -1,6 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { Telegraf } from "telegraf";
 import { TelegrafContext } from "telegraf/typings/context";
+const TelegrafInlineMenu = require('telegraf-inline-menu')
 
 type Data = {
   name: string;
