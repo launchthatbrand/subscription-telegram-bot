@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import clientPromise from '../lib/mongodb'
 import Head from 'next/head'
 import Image from 'next/image'
 
