@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { Telegraf } from "telegraf";
 import { TelegrafContext } from "telegraf/typings/context";
-import {MenuTemplate, MenuMiddleware} from 'telegraf-inline-menu';
+import { MenuTemplate, MenuMiddleware } from 'telegraf-inline-menu';
 
 type Data = {
   name: string;
