@@ -28,3 +28,32 @@ bot.on("message", async (ctx) => {
   console.log("test")
   await handleOnMessage(ctx)
 })
+
+export default async ( req ) => {
+  try {
+    // Retrieve the POST request body that gets sent from Telegram
+    const { body, query } = req
+
+    if (query.setWebhook === "true") {
+      const webhookUrl = `${BASE_PATH}/api/telegram-hook?secret_hash=${SECRET_HASH}`
+
+      // Would be nice to somehow do this in a build file or something
+      const isSet = await bot.telegram.setWebhook(webhookUrl)
+      console.log(`Set webhook to ${webhookUrl}: ${isSet}`)
+    }
+
+    if (query.secret_hash === SECRET_HASH) {
+      await bot.handleUpdate(body)
+    }
+  } catch (error) {
+    // If there was an error sending our message then we
+    // can log it into the Vercel console
+    console.error("Error sending message")
+    console.log(error.toString())
+  }
+
+  // Acknowledge the message with Telegram
+  // by sending a 200 HTTP status code
+  // The message here doesn't matter.
+  res.status(200).send("OK")
+}
