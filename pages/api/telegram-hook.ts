@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { Telegraf } from "telegraf";
 import { TelegrafContext } from "telegraf/typings/context";
-import { MenuTemplate, MenuMiddleware } from 'telegraf-inline-menu';
+//import { MenuTemplate, MenuMiddleware } from 'telegraf-inline-menu';
 
 type Data = {
   name: string;
@@ -16,6 +16,7 @@ const BASE_PATH =
     : "https://held-cold-suggestion.glitch.me";
 const bot = new Telegraf(BOT_TOKEN);
 
+/*
 const menuTemplate = new MenuTemplate<MyContext>(ctx => `Hey ${ctx.from.first_name}!`)
 const menuMiddleware = new MenuMiddleware('/', menuTemplate)
 
@@ -25,7 +26,7 @@ menuTemplate.interact('I am excited!', 'a', {
 		return false
 	}
 })
-
+*/
 
 export async function handleTestCommand(ctx: TelegrafContext) {
   const COMMAND = "/test"
@@ -68,7 +69,7 @@ bot.on("message", async (ctx) => {
   await handleOnMessage(ctx)
 })
 
-bot.use(menuMiddleware)
+// bot.use(menuMiddleware)
 
 bot.launch()
 
