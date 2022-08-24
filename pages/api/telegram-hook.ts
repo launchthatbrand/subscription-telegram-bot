@@ -63,7 +63,7 @@ bot.command("test", async (ctx) => {
   await handleTestCommand(ctx)
 })
 
-bot.command('start', ctx => menuMiddleware.replyToContext(ctx))
+// bot.command('start', ctx => menuMiddleware.replyToContext(ctx))
 
 bot.on("message", async (ctx) => {
   await handleOnMessage(ctx)
