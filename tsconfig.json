@@ -6,7 +6,7 @@
         "noFallthroughCasesInSwitch": false,
         "noImplicitReturns": false,
         "noUncheckedIndexedAccess": false,
-        "noUnusedParameters": true,
+        "noUnusedParameters": false,
         "strict": false,
         "module": "es6",
         "target": "es5",
