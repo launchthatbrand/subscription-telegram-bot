@@ -3,12 +3,15 @@
         "charset": "utf8",
         "forceConsistentCasingInFileNames": true,
         "newLine": "lf",
-        "noFallthroughCasesInSwitch": true,
-        "noImplicitReturns": true,
-        "noUncheckedIndexedAccess": true,
+        "noFallthroughCasesInSwitch": false,
+        "noImplicitReturns": false,
+        "noUncheckedIndexedAccess": false,
         "noUnusedParameters": true,
-        "strict": true,
-        "target": "ES2019",
-        "moduleResolution": "node"
+        "strict": false,
+        "module": "es6",
+        "target": "es5",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "noImplicitAny": false
     }
 }
